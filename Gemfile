@@ -9,7 +9,8 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0'
 # Use Bootstrap
 gem 'bootstrap-sass', '~> 3.3.3'
-
+gem 'devise'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

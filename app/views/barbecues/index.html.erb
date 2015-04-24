@@ -3,6 +3,10 @@
 <a href="<%= new_barbecue_path %>" class="btn btn-primary">
   Add a new BBQ
 </a>
+<div class="right">
+<%= @user.email %>
+<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+</div>
 
 <ul class="list-unstyled">
   <% @barbecues.each do |bbq| %>

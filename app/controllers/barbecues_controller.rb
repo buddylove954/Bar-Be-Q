@@ -1,6 +1,9 @@
 class BarbecuesController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @barbecues = Barbecue.order(:date)
+    @user = current_user
   end
 
   def show
