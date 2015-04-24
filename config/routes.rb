@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
  	namespace :api do
  		resources :barbecues, only: :show do
- 		get '/join' => 'barbecues#show', on: :member
+ 		post '/join' => 'barbecues#join', on: :member
  	end
  end
 
